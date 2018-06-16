@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gugi-Regular.ttf">
+            <string>Gugi-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VC" id="BYZ-38-t0r" customClass="ViewController" customModule="GroupMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taya-iv-383978-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="CPh-Ci-gdC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RO4-Ph-BxJ">
+                                <rect key="frame" x="112.5" y="135" width="150" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7BO-EB-4jC"/>
+                                </constraints>
+                                <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9k-uj-Yg1">
+                                <rect key="frame" x="72" y="271" width="230" height="29"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.4431372549" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="hMw-PP-noa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMQ-cg-6ld"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCI-Ww-7A8">
+                                <rect key="frame" x="72.5" y="250" width="230" height="29"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="91S-bJ-9wl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <state key="normal" title="Sign In With Spotify">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1Q-0E-ix3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-x4-Kyq">
+                                <rect key="frame" x="113" y="164" width="150" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="la7-Ns-vSB"/>
+                                </constraints>
+                                <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-rR-Thc">
+                                <rect key="frame" x="113" y="193" width="150" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="PZe-Bu-1en"/>
+                                </constraints>
+                                <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1d-bD-o5A">
+                                <rect key="frame" x="72.5" y="230" width="230" height="29"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="ucK-zi-zcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56E-qP-lD8"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-VB-tnm">
+                                <rect key="frame" x="35" y="259.5" width="30" height="52"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="40"/>
+                                <state key="normal" title="‹">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDR-34-qX3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aN2-VB-tnm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="2lQ-aL-Loc"/>
+                            <constraint firstItem="ECX-rR-Thc" firstAttribute="top" secondItem="dGQ-x4-Kyq" secondAttribute="bottom" constant="12" id="4YT-MC-0uq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CPh-Ci-gdC" secondAttribute="bottom" id="6aP-d5-Mkt"/>
+                            <constraint firstItem="f9k-uj-Yg1" firstAttribute="top" secondItem="S1d-bD-o5A" secondAttribute="bottom" constant="12" id="7DH-AJ-n3Z"/>
+                            <constraint firstItem="ECX-rR-Thc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="At7-wX-EhR"/>
+                            <constraint firstItem="qCI-Ww-7A8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FJf-Vv-4bR"/>
+                            <constraint firstItem="RO4-Ph-BxJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="MCF-jT-0Mg"/>
+                            <constraint firstItem="S1d-bD-o5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pr1-tB-Fx7"/>
+                            <constraint firstItem="dGQ-x4-Kyq" firstAttribute="top" secondItem="RO4-Ph-BxJ" secondAttribute="bottom" constant="12" id="REB-Of-uJx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CPh-Ci-gdC" secondAttribute="trailing" id="VLs-Ur-uKR"/>
+                            <constraint firstItem="RO4-Ph-BxJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XcH-NY-1w0"/>
+                            <constraint firstItem="dGQ-x4-Kyq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRR-5V-8i8"/>
+                            <constraint firstItem="f9k-uj-Yg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDj-Jh-ZFb"/>
+                            <constraint firstItem="qCI-Ww-7A8" firstAttribute="top" secondItem="ECX-rR-Thc" secondAttribute="bottom" constant="40" id="nrd-LT-6Js"/>
+                            <constraint firstItem="CPh-Ci-gdC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="obN-kC-aGt"/>
+                            <constraint firstItem="S1d-bD-o5A" firstAttribute="top" secondItem="ECX-rR-Thc" secondAttribute="bottom" constant="20" id="opb-xz-Cve"/>
+                            <constraint firstItem="f9k-uj-Yg1" firstAttribute="centerY" secondItem="aN2-VB-tnm" secondAttribute="centerY" id="p4y-RD-oJc"/>
+                            <constraint firstItem="CPh-Ci-gdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zVH-TN-6XZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="createAccountBtn" destination="f9k-uj-Yg1" id="lzj-9R-o7c"/>
+                        <outlet property="emailTextField" destination="dGQ-x4-Kyq" id="Jap-m1-q1c"/>
+                        <outlet property="loginBtn" destination="qCI-Ww-7A8" id="OcN-5y-BaB"/>
+                        <outlet property="nameField" destination="RO4-Ph-BxJ" id="x5M-ub-S5T"/>
+                        <outlet property="passwordTextField" destination="ECX-rR-Thc" id="wUk-wV-R1v"/>
+                        <outlet property="signUpBtn" destination="S1d-bD-o5A" id="UTA-Gh-2Ze"/>
+                        <outlet property="spotifyBtn" destination="qCI-Ww-7A8" id="81H-OT-x1W"/>
+                        <outlet property="undoBtn" destination="aN2-VB-tnm" id="GNz-ZK-POc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="22"/>
+        </scene>
+        <!--UserVC-->
+        <scene sceneID="Nn9-oz-sQg">
+            <objects>
+                <viewController storyboardIdentifier="UserVC" id="HUz-DW-LQ7" customClass="UserVC" customModule="GroupMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlk-Ce-d6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-w7-1dL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HotBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPz-v9-5ps">
+                                        <rect key="frame" x="158" y="16.5" width="58.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8A-EQ-cg8">
+                                        <rect key="frame" x="8" y="-1" width="30" height="52"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="40"/>
+                                        <state key="normal" title="‹">
+                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissSelect:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="owk-uU-VZS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GPz-v9-5ps" firstAttribute="centerY" secondItem="z8A-EQ-cg8" secondAttribute="centerY" id="1ly-P7-AYE"/>
+                                    <constraint firstAttribute="height" constant="50" id="4c4-ZU-jNw"/>
+                                    <constraint firstItem="GPz-v9-5ps" firstAttribute="centerY" secondItem="AsP-w7-1dL" secondAttribute="centerY" id="69T-xM-16L"/>
+                                    <constraint firstItem="z8A-EQ-cg8" firstAttribute="leading" secondItem="AsP-w7-1dL" secondAttribute="leading" constant="8" id="BfV-RX-MoZ"/>
+                                    <constraint firstItem="GPz-v9-5ps" firstAttribute="centerX" secondItem="AsP-w7-1dL" secondAttribute="centerX" id="PIj-cU-etL"/>
+                                </constraints>
+                            </view>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q2g-5m-gfB">
+                                <rect key="frame" x="8" y="58" width="359" height="601"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddPlaylist" rowHeight="75" id="KMI-2L-Oau" customClass="PlaylistCell" customModule="GroupMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KMI-2L-Oau" id="phf-JY-Hvh">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreGame Playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT7-M3-6ny">
+                                                    <rect key="frame" x="109" y="29" width="140" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                    <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UT7-M3-6ny" firstAttribute="centerY" secondItem="phf-JY-Hvh" secondAttribute="centerY" id="DoE-CD-hSC"/>
+                                                <constraint firstItem="UT7-M3-6ny" firstAttribute="centerX" secondItem="phf-JY-Hvh" secondAttribute="centerX" id="npB-WL-P0n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="playlistNamelbl" destination="UT7-M3-6ny" id="qgM-iV-ROl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyC-nW-A9P">
+                                <rect key="frame" x="8" y="58" width="359" height="601"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-user-100" translatesAutoresizingMaskIntoConstraints="NO" id="6ef-NY-wXb">
+                                        <rect key="frame" x="141.5" y="30" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Evc-Jh-Mt8"/>
+                                            <constraint firstAttribute="height" constant="75" id="ZQB-sX-aF4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r1-tc-mq1">
+                                        <rect key="frame" x="180" y="125" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="axR-Fs-26j">
+                                        <rect key="frame" x="0.0" y="190" width="359" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ng-hV-dKL">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="29"/>
+                                                <color key="backgroundColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                <state key="normal" title="Your Sessions">
+                                                    <color key="titleColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="yourSessionsClick:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="bjZ-BZ-r0T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPX-11-gh3">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                <state key="normal" title="Nearby Sessions">
+                                                    <color key="titleColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sessionsNearbyClick:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="U2U-B3-rZB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HJS-3Y-bB8">
+                                        <rect key="frame" x="12" y="231" width="335" height="358"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="bFH-8S-wce">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrY-tb-6FM">
+                                                    <rect key="frame" x="4" y="4" width="229" height="36"/>
+                                                    <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="24"/>
+                                                    <state key="normal" title="+ Create Session...">
+                                                        <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="addplaylistClicked:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="eiZ-gB-Rch"/>
+                                                        <action selector="yourSessionsClick:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="JYn-tb-1dH"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="GrY-tb-6FM" firstAttribute="leading" secondItem="bFH-8S-wce" secondAttribute="leading" constant="4" id="RVA-Th-niv"/>
+                                                <constraint firstItem="GrY-tb-6FM" firstAttribute="top" secondItem="bFH-8S-wce" secondAttribute="top" constant="4" id="aPa-ue-dQu"/>
+                                            </constraints>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="75" id="XJu-ju-0qi" customClass="PlaylistCell" customModule="GroupMusic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="72" width="335" height="75"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XJu-ju-0qi" id="E8j-kX-cwK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="74.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreGame Playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-E2-Ft6">
+                                                            <rect key="frame" x="97.5" y="29" width="140" height="17"/>
+                                                            <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                            <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Oxa-E2-Ft6" firstAttribute="centerX" secondItem="E8j-kX-cwK" secondAttribute="centerX" id="nvs-gj-qq0"/>
+                                                        <constraint firstItem="Oxa-E2-Ft6" firstAttribute="centerY" secondItem="E8j-kX-cwK" secondAttribute="centerY" id="rmM-9Y-giB"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="playlistNamelbl" destination="Oxa-E2-Ft6" id="Ulf-cy-KW5"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9r1-tc-mq1" firstAttribute="top" secondItem="6ef-NY-wXb" secondAttribute="bottom" constant="20" id="38G-GQ-sHj"/>
+                                    <constraint firstItem="axR-Fs-26j" firstAttribute="top" secondItem="9r1-tc-mq1" secondAttribute="bottom" constant="65" id="BwD-RS-eEA"/>
+                                    <constraint firstItem="axR-Fs-26j" firstAttribute="centerX" secondItem="kyC-nW-A9P" secondAttribute="centerX" id="D9R-BR-K1h"/>
+                                    <constraint firstItem="6ef-NY-wXb" firstAttribute="centerX" secondItem="kyC-nW-A9P" secondAttribute="centerX" id="USz-vQ-ovj"/>
+                                    <constraint firstItem="6ef-NY-wXb" firstAttribute="top" secondItem="kyC-nW-A9P" secondAttribute="top" constant="30" id="Zr7-oE-dlg"/>
+                                    <constraint firstItem="9r1-tc-mq1" firstAttribute="centerX" secondItem="kyC-nW-A9P" secondAttribute="centerX" id="cFu-JI-yBB"/>
+                                    <constraint firstAttribute="bottom" secondItem="HJS-3Y-bB8" secondAttribute="bottom" constant="12" id="fkd-u8-vXz"/>
+                                    <constraint firstItem="axR-Fs-26j" firstAttribute="leading" secondItem="kyC-nW-A9P" secondAttribute="leading" id="k2y-KM-Fzi"/>
+                                    <constraint firstAttribute="trailing" secondItem="HJS-3Y-bB8" secondAttribute="trailing" constant="12" id="nwR-UD-NGc"/>
+                                    <constraint firstAttribute="trailing" secondItem="axR-Fs-26j" secondAttribute="trailing" id="o5m-ys-nJV"/>
+                                    <constraint firstItem="HJS-3Y-bB8" firstAttribute="leading" secondItem="kyC-nW-A9P" secondAttribute="leading" constant="12" id="odV-7C-CFX"/>
+                                    <constraint firstItem="HJS-3Y-bB8" firstAttribute="top" secondItem="axR-Fs-26j" secondAttribute="bottom" constant="12" id="vI1-vG-dvz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AsP-w7-1dL" firstAttribute="top" secondItem="vlk-Ce-d6b" secondAttribute="top" id="5f2-ku-ffK"/>
+                            <constraint firstItem="Q2g-5m-gfB" firstAttribute="leading" secondItem="pnz-p5-bI2" secondAttribute="leading" constant="8" id="8NT-WY-9wx"/>
+                            <constraint firstItem="kyC-nW-A9P" firstAttribute="leading" secondItem="pnz-p5-bI2" secondAttribute="leading" constant="8" id="Kex-Bc-Juf"/>
+                            <constraint firstItem="Q2g-5m-gfB" firstAttribute="top" secondItem="AsP-w7-1dL" secondAttribute="bottom" constant="8" id="MB8-Cf-mAH"/>
+                            <constraint firstItem="pnz-p5-bI2" firstAttribute="bottom" secondItem="kyC-nW-A9P" secondAttribute="bottom" constant="8" id="YJe-0H-7gT"/>
+                            <constraint firstItem="kyC-nW-A9P" firstAttribute="top" secondItem="AsP-w7-1dL" secondAttribute="bottom" constant="8" id="c2G-oV-uxM"/>
+                            <constraint firstItem="pnz-p5-bI2" firstAttribute="bottom" secondItem="Q2g-5m-gfB" secondAttribute="bottom" constant="8" id="dRs-w6-x40"/>
+                            <constraint firstItem="pnz-p5-bI2" firstAttribute="trailing" secondItem="kyC-nW-A9P" secondAttribute="trailing" constant="8" id="dXD-W5-QX5"/>
+                            <constraint firstItem="AsP-w7-1dL" firstAttribute="leading" secondItem="pnz-p5-bI2" secondAttribute="leading" id="e6x-f2-7xY"/>
+                            <constraint firstItem="pnz-p5-bI2" firstAttribute="trailing" secondItem="AsP-w7-1dL" secondAttribute="trailing" id="nuT-s8-BsU"/>
+                            <constraint firstItem="pnz-p5-bI2" firstAttribute="trailing" secondItem="Q2g-5m-gfB" secondAttribute="trailing" constant="8" id="o5L-nj-vuu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pnz-p5-bI2"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="kyC-nW-A9P" id="9NT-FW-g25"/>
+                        <outlet property="dismissSelectBtn" destination="z8A-EQ-cg8" id="6l8-Pb-NE5"/>
+                        <outlet property="mainTableView" destination="HJS-3Y-bB8" id="7fM-xO-dM6"/>
+                        <outlet property="profileImage" destination="6ef-NY-wXb" id="q9e-DC-Ghv"/>
+                        <outlet property="selectTableView" destination="Q2g-5m-gfB" id="iyl-yB-c8c"/>
+                        <outlet property="sessionsNearby" destination="QPX-11-gh3" id="hO1-Tn-1WT"/>
+                        <outlet property="userNamelbl" destination="9r1-tc-mq1" id="OAr-z2-dWZ"/>
+                        <outlet property="yourSessions" destination="6ng-hV-dKL" id="10B-uJ-68t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyQ-cw-cKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="32.833583208395808"/>
+        </scene>
+        <!--SessionVC-->
+        <scene sceneID="dxR-ha-Rd1">
+            <objects>
+                <viewController storyboardIdentifier="SessionVC" id="D4s-2D-Dv8" customClass="SessionVC" customModule="GroupMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zY6-DZ-SOH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhg-qo-adN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HotBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-vk-T6L">
+                                        <rect key="frame" x="158" y="16.5" width="58.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz9-Pl-0aZ">
+                                        <rect key="frame" x="8" y="-1" width="30" height="52"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="40"/>
+                                        <state key="normal" title="‹">
+                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtn:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="Ygb-I3-4pr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7Ma-ZV-ZNI"/>
+                                    <constraint firstItem="Z3d-vk-T6L" firstAttribute="centerX" secondItem="lhg-qo-adN" secondAttribute="centerX" id="JfS-eP-RGy"/>
+                                    <constraint firstItem="Z3d-vk-T6L" firstAttribute="centerY" secondItem="lhg-qo-adN" secondAttribute="centerY" id="M4T-AT-vd6"/>
+                                    <constraint firstItem="Xz9-Pl-0aZ" firstAttribute="leading" secondItem="lhg-qo-adN" secondAttribute="leading" constant="8" id="NvV-We-PXr"/>
+                                    <constraint firstItem="Xz9-Pl-0aZ" firstAttribute="centerY" secondItem="lhg-qo-adN" secondAttribute="centerY" id="nI5-FO-h6r"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K96-i9-MCL">
+                                <rect key="frame" x="8" y="58" width="359" height="601"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9q-4W-bfc">
+                                        <rect key="frame" x="20" y="20" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFR-Si-bjp">
+                                        <rect key="frame" x="20" y="45" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS0-UB-F1h">
+                                        <rect key="frame" x="123" y="127" width="113" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybR-gf-zTM">
+                                        <rect key="frame" x="167.5" y="164" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-ax-dDr">
+                                        <rect key="frame" x="167.5" y="201" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTV-4b-43r">
+                                        <rect key="frame" x="166.5" y="226" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="9Yw-Ih-sJL"/>
+                                            <constraint firstAttribute="height" constant="25" id="fPr-Tv-Dsi"/>
+                                        </constraints>
+                                        <state key="normal" image="icons8-play-50">
+                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pausePlay:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="Ri8-7V-7S6"/>
+                                            <action selector="sessionsNearbyClick:" destination="HUz-DW-LQ7" eventType="touchUpInside" id="Vtf-Om-BYz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-FF-bue">
+                                        <rect key="frame" x="216.5" y="230" width="34.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oll-wj-fhB">
+                                        <rect key="frame" x="107" y="229.5" width="34.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-Pt-aiZ">
+                                        <rect key="frame" x="107.5" y="271.5" width="143.5" height="2.5"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="progressTintColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote For Next Track..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSY-tA-q43">
+                                        <rect key="frame" x="20" y="333" width="331" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="CPd-b9-RI6">
+                                        <rect key="frame" x="40" y="380" width="255" height="131"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="wVI-7V-oUw">
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1H-gH-1ZY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="rmW-rP-KSl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title="......">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songOneVote:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="18O-Qp-Xcg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eej-Oa-tx5">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="0Le-v1-DiR">
+                                                <rect key="frame" x="0.0" y="52" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcq-MO-EQY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="Nkc-EC-Lg1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title="......">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songTwoVote:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="4n7-xZ-ZHP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8B-hz-KuV">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="9tE-v3-wEi">
+                                                <rect key="frame" x="0.0" y="104" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-U7-CfO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="kRZ-xz-xAb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title=".....">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songThreeVote:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="RR7-eZ-2aw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ol-5A-YGp">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mFR-Si-bjp" firstAttribute="top" secondItem="R9q-4W-bfc" secondAttribute="bottom" constant="8" id="8bW-ae-Xyg"/>
+                                    <constraint firstItem="nyM-Pt-aiZ" firstAttribute="leading" secondItem="oll-wj-fhB" secondAttribute="leading" id="8xZ-ew-Fxc"/>
+                                    <constraint firstItem="dTV-4b-43r" firstAttribute="centerX" secondItem="K96-i9-MCL" secondAttribute="centerX" id="9Gl-xz-cyi"/>
+                                    <constraint firstItem="b2T-FF-bue" firstAttribute="trailing" secondItem="nyM-Pt-aiZ" secondAttribute="trailing" id="Ass-HU-YDI"/>
+                                    <constraint firstItem="ybR-gf-zTM" firstAttribute="centerX" secondItem="K96-i9-MCL" secondAttribute="centerX" id="BZW-We-P1j"/>
+                                    <constraint firstItem="j3w-ax-dDr" firstAttribute="centerX" secondItem="K96-i9-MCL" secondAttribute="centerX" id="DMp-rK-l41"/>
+                                    <constraint firstItem="XS0-UB-F1h" firstAttribute="top" secondItem="mFR-Si-bjp" secondAttribute="bottom" constant="65" id="Eab-ao-UTS"/>
+                                    <constraint firstItem="cSY-tA-q43" firstAttribute="leading" secondItem="K96-i9-MCL" secondAttribute="leading" constant="20" id="Hgi-CK-AlT"/>
+                                    <constraint firstItem="dTV-4b-43r" firstAttribute="top" secondItem="j3w-ax-dDr" secondAttribute="bottom" constant="8" id="IRu-6f-wFd"/>
+                                    <constraint firstItem="ybR-gf-zTM" firstAttribute="top" secondItem="XS0-UB-F1h" secondAttribute="bottom" constant="20" id="J5x-q4-ob6"/>
+                                    <constraint firstItem="R9q-4W-bfc" firstAttribute="top" secondItem="K96-i9-MCL" secondAttribute="top" constant="20" id="KFc-J4-HSV"/>
+                                    <constraint firstAttribute="trailing" secondItem="cSY-tA-q43" secondAttribute="trailing" constant="8" id="PEb-Rz-f6a"/>
+                                    <constraint firstItem="CPd-b9-RI6" firstAttribute="leading" secondItem="K96-i9-MCL" secondAttribute="leading" constant="40" id="SUm-cx-FMD"/>
+                                    <constraint firstItem="b2T-FF-bue" firstAttribute="centerY" secondItem="dTV-4b-43r" secondAttribute="centerY" id="WwL-Lm-hbM"/>
+                                    <constraint firstItem="mFR-Si-bjp" firstAttribute="leading" secondItem="K96-i9-MCL" secondAttribute="leading" constant="20" id="bXV-us-Cf0"/>
+                                    <constraint firstItem="b2T-FF-bue" firstAttribute="leading" secondItem="dTV-4b-43r" secondAttribute="trailing" constant="25" id="blL-WA-1Ry"/>
+                                    <constraint firstItem="R9q-4W-bfc" firstAttribute="leading" secondItem="K96-i9-MCL" secondAttribute="leading" constant="20" id="buE-tq-hze"/>
+                                    <constraint firstItem="dTV-4b-43r" firstAttribute="centerY" secondItem="oll-wj-fhB" secondAttribute="centerY" id="dSP-Zf-7c4"/>
+                                    <constraint firstItem="XS0-UB-F1h" firstAttribute="centerX" secondItem="K96-i9-MCL" secondAttribute="centerX" id="gJ3-Xi-asW"/>
+                                    <constraint firstItem="nyM-Pt-aiZ" firstAttribute="top" secondItem="dTV-4b-43r" secondAttribute="bottom" constant="20" id="l4j-QI-dEP"/>
+                                    <constraint firstItem="CPd-b9-RI6" firstAttribute="top" secondItem="cSY-tA-q43" secondAttribute="bottom" constant="30" id="sjf-25-wz1"/>
+                                    <constraint firstItem="j3w-ax-dDr" firstAttribute="top" secondItem="ybR-gf-zTM" secondAttribute="bottom" constant="20" id="udV-ji-PQC"/>
+                                    <constraint firstItem="dTV-4b-43r" firstAttribute="leading" secondItem="oll-wj-fhB" secondAttribute="trailing" constant="25" id="ylT-44-sgn"/>
+                                    <constraint firstItem="cSY-tA-q43" firstAttribute="top" secondItem="nyM-Pt-aiZ" secondAttribute="bottom" constant="60" id="zpf-Z4-hmU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K96-i9-MCL" firstAttribute="leading" secondItem="3Jz-9t-LM5" secondAttribute="leading" constant="8" id="0gL-mw-Gvi"/>
+                            <constraint firstItem="K96-i9-MCL" firstAttribute="top" secondItem="lhg-qo-adN" secondAttribute="bottom" constant="8" id="9cQ-na-vd3"/>
+                            <constraint firstItem="lhg-qo-adN" firstAttribute="top" secondItem="zY6-DZ-SOH" secondAttribute="top" id="H4R-Fd-8JP"/>
+                            <constraint firstItem="3Jz-9t-LM5" firstAttribute="trailing" secondItem="K96-i9-MCL" secondAttribute="trailing" constant="8" id="LbG-lq-5kw"/>
+                            <constraint firstItem="lhg-qo-adN" firstAttribute="leading" secondItem="3Jz-9t-LM5" secondAttribute="leading" id="ico-3W-tj0"/>
+                            <constraint firstItem="3Jz-9t-LM5" firstAttribute="bottom" secondItem="K96-i9-MCL" secondAttribute="bottom" constant="8" id="m1C-qz-34j"/>
+                            <constraint firstItem="lhg-qo-adN" firstAttribute="trailing" secondItem="3Jz-9t-LM5" secondAttribute="trailing" id="wKQ-sD-CvU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Jz-9t-LM5"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLbl" destination="j3w-ax-dDr" id="BpD-BA-Da9"/>
+                        <outlet property="bgView" destination="K96-i9-MCL" id="xFV-g4-7j1"/>
+                        <outlet property="completedLbl" destination="oll-wj-fhB" id="gg7-zo-APK"/>
+                        <outlet property="ownerLbl" destination="mFR-Si-bjp" id="0o0-1B-H70"/>
+                        <outlet property="pausePlayButton" destination="dTV-4b-43r" id="uE2-nq-tjX"/>
+                        <outlet property="playlistNameLbl" destination="R9q-4W-bfc" id="BiS-Hv-GZO"/>
+                        <outlet property="songOneBtn" destination="v1H-gH-1ZY" id="URJ-iu-iPR"/>
+                        <outlet property="songOneLbl" destination="eej-Oa-tx5" id="skZ-X7-x0U"/>
+                        <outlet property="songProgressView" destination="nyM-Pt-aiZ" id="3Kk-CS-CzL"/>
+                        <outlet property="songThreeBtn" destination="zkp-U7-CfO" id="fCf-zn-pPI"/>
+                        <outlet property="songThreeLbl" destination="8Ol-5A-YGp" id="aC7-p2-vkD"/>
+                        <outlet property="songTwoBtn" destination="Tcq-MO-EQY" id="DxK-lB-tUo"/>
+                        <outlet property="songTwoLbl" destination="R8B-hz-KuV" id="XRE-l2-u7b"/>
+                        <outlet property="toGolbl" destination="b2T-FF-bue" id="4OZ-7X-IUz"/>
+                        <outlet property="trackName" destination="ybR-gf-zTM" id="KWq-5a-ddD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9W-EC-EfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="31.934032983508249"/>
+        </scene>
+        <!--NearbyVC-->
+        <scene sceneID="33f-1s-2m9">
+            <objects>
+                <viewController storyboardIdentifier="NearbyVC" id="HxX-T8-eQ1" customClass="NearbyVC" customModule="GroupMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WLH-Yh-7ji">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HotBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R0-NQ-jMT">
+                                <rect key="frame" x="158.5" y="28" width="58.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-7f-1OV">
+                                <rect key="frame" x="8" y="10.5" width="30" height="52"/>
+                                <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="40"/>
+                                <state key="normal" title="‹">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="D4s-2D-Dv8" eventType="touchUpInside" id="UrD-X0-dYC"/>
+                                    <action selector="dismiss:" destination="HxX-T8-eQ1" eventType="touchUpInside" id="Puh-jl-cSy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSO-kH-B2c">
+                                <rect key="frame" x="8" y="70.5" width="359" height="588.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreGame Playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGa-Be-3Fu">
+                                        <rect key="frame" x="20" y="20" width="140" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noah Schairer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlB-Qr-GPj">
+                                        <rect key="frame" x="20" y="45" width="119.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjz-Vs-ery">
+                                        <rect key="frame" x="123" y="127" width="113" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-vo-GqU">
+                                        <rect key="frame" x="167.5" y="164" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roS-yL-uKO">
+                                        <rect key="frame" x="167.5" y="201" width="24.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-5L-1Uv">
+                                        <rect key="frame" x="274.5" y="230" width="34.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="kXb-TF-fO4">
+                                        <rect key="frame" x="104.5" y="238" width="150.5" height="2.5"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.43529411759999997" green="0.85490196080000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150.5" id="TCz-Sz-nvz"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.43529411759999997" green="0.85490196080000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote For Next Track..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbQ-DC-viL">
+                                        <rect key="frame" x="20" y="297" width="331" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Wce-vT-Eef">
+                                        <rect key="frame" x="40" y="344" width="255" height="131"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Oie-QX-xRq">
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtG-dZ-qcC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="z57-KW-enC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title="......">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songOneVote:" destination="HxX-T8-eQ1" eventType="touchUpInside" id="fmt-0D-ab1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-Da-9RN">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Zpr-7H-mA9">
+                                                <rect key="frame" x="0.0" y="52" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12u-pc-4wg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="PSw-Dw-G0H"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title="......">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songTwoVote:" destination="HxX-T8-eQ1" eventType="touchUpInside" id="f4R-Ta-Kog"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Cv-0th">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="rz3-T3-BFq">
+                                                <rect key="frame" x="0.0" y="104" width="255" height="27"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umc-g4-Uj8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="yHO-Uo-UtA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="15"/>
+                                                        <state key="normal" title=".....">
+                                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="songThreevote:" destination="HxX-T8-eQ1" eventType="touchUpInside" id="jRp-Ie-RS2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGp-KS-5gD">
+                                                        <rect key="frame" x="245" y="0.0" width="10" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1v-SJ-rar">
+                                        <rect key="frame" x="50" y="230" width="34.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Gugi-Regular" family="Gugi" pointSize="17"/>
+                                        <color key="textColor" red="0.99204939599999997" green="0.99221879239999999" blue="0.9920386672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Wce-vT-Eef" firstAttribute="top" secondItem="cbQ-DC-viL" secondAttribute="bottom" constant="30" id="1wp-dB-Wmc"/>
+                                    <constraint firstItem="roS-yL-uKO" firstAttribute="centerX" secondItem="aSO-kH-B2c" secondAttribute="centerX" id="2jg-Hu-Fmy"/>
+                                    <constraint firstItem="lFq-5L-1Uv" firstAttribute="centerY" secondItem="N1v-SJ-rar" secondAttribute="centerY" id="3yR-my-JXn"/>
+                                    <constraint firstItem="cbQ-DC-viL" firstAttribute="top" secondItem="lFq-5L-1Uv" secondAttribute="bottom" constant="50" id="8me-j1-G4S"/>
+                                    <constraint firstItem="roS-yL-uKO" firstAttribute="top" secondItem="Un7-vo-GqU" secondAttribute="bottom" constant="20" id="Ac0-wc-sIQ"/>
+                                    <constraint firstItem="VlB-Qr-GPj" firstAttribute="leading" secondItem="aSO-kH-B2c" secondAttribute="leading" constant="20" id="AqE-pf-UiM"/>
+                                    <constraint firstAttribute="trailing" secondItem="lFq-5L-1Uv" secondAttribute="trailing" constant="50" id="BMs-Hh-SIc"/>
+                                    <constraint firstItem="Un7-vo-GqU" firstAttribute="centerX" secondItem="aSO-kH-B2c" secondAttribute="centerX" id="LGo-mC-XZE"/>
+                                    <constraint firstItem="Un7-vo-GqU" firstAttribute="top" secondItem="Cjz-Vs-ery" secondAttribute="bottom" constant="20" id="MIP-Ll-wtt"/>
+                                    <constraint firstItem="kXb-TF-fO4" firstAttribute="top" secondItem="roS-yL-uKO" secondAttribute="bottom" constant="20" id="OdX-6J-HEy"/>
+                                    <constraint firstItem="kXb-TF-fO4" firstAttribute="centerY" secondItem="N1v-SJ-rar" secondAttribute="centerY" id="QAA-ts-cT1"/>
+                                    <constraint firstItem="cbQ-DC-viL" firstAttribute="leading" secondItem="aSO-kH-B2c" secondAttribute="leading" constant="20" id="Qkt-9O-KT6"/>
+                                    <constraint firstItem="VlB-Qr-GPj" firstAttribute="top" secondItem="dGa-Be-3Fu" secondAttribute="bottom" constant="8" id="Zbj-yt-K5e"/>
+                                    <constraint firstItem="Cjz-Vs-ery" firstAttribute="top" secondItem="VlB-Qr-GPj" secondAttribute="bottom" constant="65" id="bAb-df-uQC"/>
+                                    <constraint firstItem="N1v-SJ-rar" firstAttribute="leading" secondItem="aSO-kH-B2c" secondAttribute="leading" constant="50" id="dpq-Pi-BNc"/>
+                                    <constraint firstItem="Wce-vT-Eef" firstAttribute="leading" secondItem="aSO-kH-B2c" secondAttribute="leading" constant="40" id="eqd-ls-oKY"/>
+                                    <constraint firstItem="kXb-TF-fO4" firstAttribute="centerX" secondItem="aSO-kH-B2c" secondAttribute="centerX" id="hOD-e3-fG9"/>
+                                    <constraint firstItem="dGa-Be-3Fu" firstAttribute="leading" secondItem="aSO-kH-B2c" secondAttribute="leading" constant="20" id="lHh-ON-fny"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbQ-DC-viL" secondAttribute="trailing" constant="8" id="lTj-6b-hGq"/>
+                                    <constraint firstItem="Cjz-Vs-ery" firstAttribute="centerX" secondItem="aSO-kH-B2c" secondAttribute="centerX" id="mOz-If-MvS"/>
+                                    <constraint firstItem="dGa-Be-3Fu" firstAttribute="top" secondItem="aSO-kH-B2c" secondAttribute="top" constant="20" id="rmW-OM-UU2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.44313725490196076" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aSO-kH-B2c" firstAttribute="top" secondItem="d2S-7f-1OV" secondAttribute="bottom" constant="8" id="3tN-Cs-Hiq"/>
+                            <constraint firstItem="5R0-NQ-jMT" firstAttribute="centerX" secondItem="WLH-Yh-7ji" secondAttribute="centerX" id="5uq-hk-gLP"/>
+                            <constraint firstItem="d2S-7f-1OV" firstAttribute="leading" secondItem="CQA-eB-2mI" secondAttribute="leading" constant="8" id="Zkp-eA-86E"/>
+                            <constraint firstItem="CQA-eB-2mI" firstAttribute="trailing" secondItem="aSO-kH-B2c" secondAttribute="trailing" constant="8" id="ZrN-pn-iBe"/>
+                            <constraint firstItem="5R0-NQ-jMT" firstAttribute="top" secondItem="CQA-eB-2mI" secondAttribute="top" constant="8" id="bVB-pq-xsS"/>
+                            <constraint firstItem="aSO-kH-B2c" firstAttribute="leading" secondItem="CQA-eB-2mI" secondAttribute="leading" constant="8" id="dCf-tt-HJe"/>
+                            <constraint firstItem="d2S-7f-1OV" firstAttribute="centerY" secondItem="5R0-NQ-jMT" secondAttribute="centerY" id="mIP-Xx-ERc"/>
+                            <constraint firstItem="CQA-eB-2mI" firstAttribute="bottom" secondItem="aSO-kH-B2c" secondAttribute="bottom" constant="8" id="tHm-L4-qKm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CQA-eB-2mI"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistName" destination="roS-yL-uKO" id="mf9-mX-AM9"/>
+                        <outlet property="bgView" destination="aSO-kH-B2c" id="EeX-wa-SY4"/>
+                        <outlet property="currentTrackName" destination="Un7-vo-GqU" id="OSd-VF-KDv"/>
+                        <outlet property="playlistName" destination="dGa-Be-3Fu" id="5by-cI-joe"/>
+                        <outlet property="playlistOwner" destination="VlB-Qr-GPj" id="bbj-sj-nmL"/>
+                        <outlet property="songOneBtn" destination="LtG-dZ-qcC" id="AIa-sC-f9Z"/>
+                        <outlet property="songOneLbl" destination="3ug-Da-9RN" id="IOV-LU-ji4"/>
+                        <outlet property="songThreeBtn" destination="Umc-g4-Uj8" id="4OF-UR-qYJ"/>
+                        <outlet property="songThreeLbl" destination="eGp-KS-5gD" id="bpS-cQ-a8p"/>
+                        <outlet property="songTwoBtn" destination="12u-pc-4wg" id="2IO-Lq-vWL"/>
+                        <outlet property="songTwoLbl" destination="Vve-Cv-0th" id="a8Z-2s-cNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtD-Mn-GCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="765"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-play-50" width="50" height="50"/>
+        <image name="icons8-user-100" width="100" height="100"/>
+        <image name="taya-iv-383978-unsplash" width="1600" height="2400"/>
+    </resources>
+</document>
